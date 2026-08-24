@@ -28,7 +28,7 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full lg:w-[35%] flex flex-col z-20"
+          className="w-full lg:w-[35%] flex flex-col justify-center min-h-[80vh] lg:min-h-0 z-20"
         >
           {/* Badge */}
           <motion.div variants={itemVariants} className="mb-6">
@@ -71,8 +71,8 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Column - Image */}
-        <div className="w-full lg:absolute lg:right-0 lg:top-0 lg:w-[60%] xl:w-[55%] flex justify-center items-center z-10 pointer-events-none mt-16 lg:mt-0 h-[350px] lg:h-full">
-          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-full lg:h-full flex justify-center items-center">
+        <div className="w-full lg:absolute lg:right-0 lg:top-0 lg:w-[60%] xl:w-[55%] flex justify-center items-center z-10 pointer-events-none mt-8 lg:mt-0 h-auto lg:h-full mb-8 lg:mb-0">
+          <div className="relative w-[330px] h-[330px] sm:w-[400px] sm:h-[400px] lg:w-full lg:h-full flex justify-center items-center">
             {/* Mobile Background Glow */}
             <div className="absolute inset-0 bg-purple-600/30 rounded-full blur-[60px] lg:hidden z-0"></div>
             
