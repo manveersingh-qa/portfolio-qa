@@ -11,7 +11,7 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const filters = ['All', 'Development', 'Testing Projects'];
-
+  const projects = [
     {
       id: 1,
       title: 'Loopbynav',
