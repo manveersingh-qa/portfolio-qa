@@ -2,18 +2,22 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
 
+import loopbynavImg from '../../assets/work_logo/loopbynav.png';
+import lmsImg from '../../assets/work_logo/lms.png';
+import vtnImg from '../../assets/vtn.png';
+import pwebImg from '../../assets/pweb.png';
+
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const filters = ['All', 'Development', 'Testing Projects'];
 
-  const projects = [
     {
       id: 1,
       title: 'Loopbynav',
       subtitle: 'E-commerce / Brand Website',
       category: 'Development',
-      image: '/src/assets/work_logo/loopbynav.png',
+      image: loopbynavImg,
       link: 'https://loopbynav.com',
       tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS']
     },
@@ -22,7 +26,7 @@ const Work = () => {
       title: 'Learning Management System (LMS)',
       subtitle: '',
       category: 'Development',
-      image: '/src/assets/work_logo/lms.png',
+      image: lmsImg,
       // link: '#',
       tags: ['MERN Stack', 'JavaScript (ES6+)']
     },
@@ -31,7 +35,7 @@ const Work = () => {
       title: 'VoiceToNotes.ai',
       subtitle: 'Test Cases, Bug Reports - QA Testing (Web & Mobile)',
       category: 'Testing Projects',
-      image: '/src/assets/vtn.png',
+      image: vtnImg,
       //link: '#',
       tags: ['Postman', 'JIRA', 'Excel']
     },
@@ -40,7 +44,7 @@ const Work = () => {
       title: 'Portfolio Website',
       subtitle: 'Personal Portfolio Website',
       category: 'Development',
-      image: '/src/assets/pweb.png',
+      image: pwebImg,
       //  link: '#',
       tags: ['React', 'Tailwind CSS']
     }
